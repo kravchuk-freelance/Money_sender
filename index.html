@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send prize!</title>
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="main">
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item">
+          <p class="nav_link isActive">Send</p>
+        </li>
+        <li class="nav_item">
+          <p class="nav_link">Request</p>
+        </li>
+        <li class="nav_item">
+          <p class="nav_link">Contacts</p>
+        </li>
+        <li class="nav_item">
+          <p class="nav_link">More</p>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- First Step -->
+    <div class="name isActive">
+      <h4 class="name_title">Send payment to:</h4>
+      <input type="text" class="name_input nameInput" placeholder="Name, email or mobile" autocomplete="off">
+      <button class="name_btn nameBtn" disabled>Next</button>
+    </div>
+
+    <!-- Second Step -->
+    <div class="charge">
+      <h4 class="charge_title chargeTitle"></h4>
+      <input type="number" class="charge_input chargeInput" placeholder="0.00">
+      <button class="charge_btn chargeBtn" disabled>Send</button>
+    </div>
+
+    <!-- Third Step -->
+    <div class="result">
+      <p class="result_title resultTitle">
+        You've sent <span class="resultCharge"></span> USD to <span class="resultName"></span>
+      </p>
+      <button class="result_btn resultBtn">Send more money</button>
+    </div>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
